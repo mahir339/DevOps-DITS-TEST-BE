@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Result and Error types used by the Application layer of every DevOps Test Store service. No dependencies.</Description>
+  </PropertyGroup>
+
+</Project>

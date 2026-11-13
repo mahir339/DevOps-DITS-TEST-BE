@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DevOpsStore.BuildingBlocks.Http/DevOpsStore.BuildingBlocks.Http.csproj" />
+    <Project Path="src/DevOpsStore.BuildingBlocks.Messaging/DevOpsStore.BuildingBlocks.Messaging.csproj" />
+    <Project Path="src/DevOpsStore.BuildingBlocks.Persistence/DevOpsStore.BuildingBlocks.Persistence.csproj" />
+    <Project Path="src/DevOpsStore.BuildingBlocks.Results/DevOpsStore.BuildingBlocks.Results.csproj" />
+    <Project Path="src/DevOpsStore.BuildingBlocks.Security/DevOpsStore.BuildingBlocks.Security.csproj" />
+    <Project Path="src/DevOpsStore.BuildingBlocks.Web/DevOpsStore.BuildingBlocks.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/DevOpsStore.BuildingBlocks.UnitTests/DevOpsStore.BuildingBlocks.UnitTests.csproj" />
+  </Folder>
+</Solution>

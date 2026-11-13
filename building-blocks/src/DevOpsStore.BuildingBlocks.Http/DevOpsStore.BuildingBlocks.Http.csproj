@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>HttpClient helpers for service-to-service calls in DevOps Test Store: forwards the X-Correlation-Id and bearer token to downstream services and adds retry/circuit-breaker resilience.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Http.Resilience" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DevOpsStore.BuildingBlocks.Web\DevOpsStore.BuildingBlocks.Web.csproj" />
+  </ItemGroup>
+
+</Project>

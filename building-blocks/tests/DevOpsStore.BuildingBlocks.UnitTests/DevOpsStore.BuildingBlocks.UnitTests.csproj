@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\DevOpsStore.BuildingBlocks.Results\DevOpsStore.BuildingBlocks.Results.csproj" />
+    <ProjectReference Include="..\..\src\DevOpsStore.BuildingBlocks.Web\DevOpsStore.BuildingBlocks.Web.csproj" />
+    <ProjectReference Include="..\..\src\DevOpsStore.BuildingBlocks.Http\DevOpsStore.BuildingBlocks.Http.csproj" />
+    <ProjectReference Include="..\..\src\DevOpsStore.BuildingBlocks.Messaging\DevOpsStore.BuildingBlocks.Messaging.csproj" />
+    <ProjectReference Include="..\..\src\DevOpsStore.BuildingBlocks.Persistence\DevOpsStore.BuildingBlocks.Persistence.csproj" />
+    <ProjectReference Include="..\..\src\DevOpsStore.BuildingBlocks.Security\DevOpsStore.BuildingBlocks.Security.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+</Project>

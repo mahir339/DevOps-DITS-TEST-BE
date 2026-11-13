@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <!-- API layer: the runnable ASP.NET Core host (this is the project that gets published). -->
+
+  <PropertyGroup>
+    <!-- Local secrets (connection strings, JWT key): dotnet user-secrets set "ConnectionStrings:CustomersDb" "..." -->
+    <UserSecretsId>devops-store-customers-c973fb32-08fc-4bf9-89b1-3e5d81d90655</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevOpsStore.BuildingBlocks.Persistence" />
+    <PackageReference Include="DevOpsStore.BuildingBlocks.Security" />
+    <PackageReference Include="DevOpsStore.BuildingBlocks.Web" />
+    <!-- Needed by the dotnet-ef tool (migrations); not part of the published app. -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Customers.Application\Customers.Application.csproj" />
+    <ProjectReference Include="..\Customers.Infrastructure\Customers.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

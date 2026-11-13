@@ -1,0 +1,31 @@
+<Project>
+
+  <!-- Central Package Management: NuGet versions are defined here, not in the .csproj files. -->
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.14" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.14" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.14" />
+    <PackageVersion Include="Yarp.ReverseProxy" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup Label="DevOps Test Store building blocks (internal feed, see nuget.config)">
+    <PackageVersion Include="DevOpsStore.BuildingBlocks.Http" Version="2.0.2" />
+    <PackageVersion Include="DevOpsStore.BuildingBlocks.Messaging" Version="2.0.2" />
+    <PackageVersion Include="DevOpsStore.BuildingBlocks.Persistence" Version="2.0.2" />
+    <PackageVersion Include="DevOpsStore.BuildingBlocks.Results" Version="2.0.2" />
+    <PackageVersion Include="DevOpsStore.BuildingBlocks.Security" Version="2.0.2" />
+    <PackageVersion Include="DevOpsStore.BuildingBlocks.Web" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup Label="Testing">
+    <PackageVersion Include="coverlet.collector" Version="6.0.4" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageVersion Include="xunit" Version="2.9.3" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.4" />
+  </ItemGroup>
+
+</Project>

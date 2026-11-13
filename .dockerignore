@@ -1,0 +1,22 @@
+
+**/bin/
+**/obj/
+**/TestResults/
+**/out/
+**/node_modules/
+**/coverage/
+**/test-results/
+.git/
+.vs/
+*.user
+*.suo
+
+# Environment and secret files
+.env
+**/.env
+.env.*.local
+**/.env.*.local
+
+# Private keys
+*.pem
+*.key

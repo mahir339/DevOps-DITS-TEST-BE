@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Infrastructure layer: PostgreSQL via EF Core (migrations live in Persistence/Migrations) and other external systems. -->
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevOpsStore.BuildingBlocks.Http" />
+    <PackageReference Include="DevOpsStore.BuildingBlocks.Messaging" />
+    <PackageReference Include="DevOpsStore.BuildingBlocks.Persistence" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ordering.Application\Ordering.Application.csproj" />
+  </ItemGroup>
+
+</Project>

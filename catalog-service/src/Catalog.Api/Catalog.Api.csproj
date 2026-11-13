@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <!-- API layer: the runnable ASP.NET Core host (this is the project that gets published). -->
+
+  <PropertyGroup>
+    <!-- Local secrets (connection strings, JWT key): dotnet user-secrets set "ConnectionStrings:CatalogDb" "..." -->
+    <UserSecretsId>devops-store-catalog-258c7005-0dcb-4844-97c4-fdedf415cb50</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevOpsStore.BuildingBlocks.Persistence" />
+    <PackageReference Include="DevOpsStore.BuildingBlocks.Security" />
+    <PackageReference Include="DevOpsStore.BuildingBlocks.Web" />
+    <!-- Needed by the dotnet-ef tool (migrations); not part of the published app. -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Catalog.Application\Catalog.Application.csproj" />
+    <ProjectReference Include="..\Catalog.Infrastructure\Catalog.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

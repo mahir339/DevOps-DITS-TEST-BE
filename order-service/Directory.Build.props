@@ -1,0 +1,14 @@
+<Project>
+
+  <!-- Shared MSBuild settings for every project in this service's solution. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Company>DevOps Test Store</Company>
+    <Product>order-service</Product>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+</Project>

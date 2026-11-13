@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <!-- API layer: the runnable ASP.NET Core host (this is the project that gets published). -->
+
+  <PropertyGroup>
+    <!-- Local secrets (connection strings, JWT key): dotnet user-secrets set "ConnectionStrings:NotificationsDb" "..." -->
+    <UserSecretsId>devops-store-notifications-ed834b74-b074-4716-81cf-45d3cae76d27</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevOpsStore.BuildingBlocks.Persistence" />
+    <PackageReference Include="DevOpsStore.BuildingBlocks.Security" />
+    <PackageReference Include="DevOpsStore.BuildingBlocks.Web" />
+    <!-- Needed by the dotnet-ef tool (migrations); not part of the published app. -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Notifications.Application\Notifications.Application.csproj" />
+    <ProjectReference Include="..\Notifications.Infrastructure\Notifications.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

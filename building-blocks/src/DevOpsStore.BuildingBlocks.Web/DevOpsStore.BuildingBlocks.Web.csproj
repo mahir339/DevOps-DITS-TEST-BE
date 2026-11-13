@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>ASP.NET Core service defaults for DevOps Test Store APIs: health and service-info endpoints, CORS, problem details, correlation ids and result-to-HTTP mapping.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DevOpsStore.BuildingBlocks.Results\DevOpsStore.BuildingBlocks.Results.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,26 @@
+<Project>
+
+  <!-- Shared settings for every building-block library. These projects are shipped as NuGet packages. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <!-- NuGet package metadata. Override the version at pack time with: dotnet pack -p:Version=1.2.3 -->
+  <PropertyGroup>
+    <Version>2.0.2</Version>
+    <Authors>DevOps Test Store</Authors>
+    <Company>DevOps Test Store</Company>
+    <Product>DevOps Test Store Building Blocks</Product>
+    <PackageTags>devops-store;building-blocks;aspnetcore</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)artifacts/packages</PackageOutputPath>
+  </PropertyGroup>
+
+</Project>

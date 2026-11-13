@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <!--
+    Second deployable of this solution: consumes order events from RabbitMQ and writes notifications.
+    No public API, only GET / and the health endpoints (for probes). Scale it independently of the API.
+  -->
+
+  <PropertyGroup>
+    <UserSecretsId>devops-store-notification-worker-7507e790-5067-4c99-a1c2-d6711ba0c5d8</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevOpsStore.BuildingBlocks.Messaging" />
+    <PackageReference Include="DevOpsStore.BuildingBlocks.Persistence" />
+    <PackageReference Include="DevOpsStore.BuildingBlocks.Web" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Notifications.Application\Notifications.Application.csproj" />
+    <ProjectReference Include="..\Notifications.Infrastructure\Notifications.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
